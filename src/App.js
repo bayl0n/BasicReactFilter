@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Name from './components/Name';
+import { Link } from 'react-router-dom';
 
 function App() {
   const state = [
