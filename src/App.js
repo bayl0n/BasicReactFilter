@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Name from './components/Name';
 import { Link } from 'react-router-dom';
+import Counter from './components/Counter';
 
 function App() {
   const state = [
@@ -50,6 +51,9 @@ function App() {
         Clear Filter
       </button>
       { items.map(user => <Name name={user.name} category={user.category}/>) }
+
+      <Counter/>
+
     </div>
   );
 }
